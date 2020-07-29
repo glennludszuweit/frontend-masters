@@ -43,7 +43,6 @@ console.log(user4);
 console.log(user5);
 
 //generate object using prototype chain
-
 function createNewUser(name, score) {
   const newUser = Object.create(newUserFunction);
   newUser.name = name;
@@ -72,7 +71,7 @@ user7.increment();
 console.log(user6);
 console.log(user7);
 
-
+//new Keyword
 
 
 
