@@ -77,9 +77,12 @@ function userCreator(name, score) {
   this.score = score;
 }
 
-userCreator.prototype;
+userCreator.prototype.login = function() {
+  console.log('Logged In!');
+}
+
 userCreator.prototype.increment = function() {
-  this.score++
+  this.score++;
 }
 
 const user8 = new userCreator('John', 17);
@@ -91,7 +94,28 @@ user9.increment();
 console.log(user8);
 console.log(user9);
 
+//class keyword
+class UserCreator {
+  constructor(name, score) {
+    this.name = name;
+    this.score = score;
+  }
+  increment() {
+    this.score++;
+  }
+  login() {
+    console.log('Logged in!')
+  }
+}
 
+const user10 = new UserCreator('Saul', 15);
+const user11 = new UserCreator('Sara', 22);
+
+user10.increment();
+user11.increment();
+
+console.log(user10);
+console.log(user11);
 
 
 
