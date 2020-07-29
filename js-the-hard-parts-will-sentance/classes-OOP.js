@@ -72,6 +72,47 @@ console.log(user6);
 console.log(user7);
 
 //new Keyword
+function userCreator(name, score) {
+  this.name = name;
+  this.score = score;
+}
+
+userCreator.prototype;
+userCreator.prototype.increment = function() {
+  this.score++
+}
+
+const user8 = new userCreator('John', 17);
+const user9 = new userCreator('Jane', 7);
+
+user8.increment();
+user9.increment();
+
+console.log(user8);
+console.log(user9);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
